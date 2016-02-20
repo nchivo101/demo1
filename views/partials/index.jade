@@ -1,0 +1,12 @@
+extends ./../layout
+h1 Index
+block content
+    h1 Hello from index
+    ul 
+        each bird in index
+            li #{bird.name} is #{bird.age} years old. 
+    form(action="/add" method="post")
+        input(name='name' placeholder="name")
+        input(name='age' placeholder="age")
+        button(type="submit") Submit
+    

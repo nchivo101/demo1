@@ -1,0 +1,9 @@
+extends layout
+h1 About
+block content
+    h1 Post name and age to index.jade
+    form(action="/add" method="post")
+        input(name='name' placeholder="name")
+        input(name='age' placeholder="age")
+        button(type="submit") Submit
+    
